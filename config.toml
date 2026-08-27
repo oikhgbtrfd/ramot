@@ -1,0 +1,16 @@
+debug = false
+secret = "eed2afa90da657a9976e83bafbd4939daa636c6f7564666c6172652e636f6d"
+bind-to = "0.0.0.0:443"
+concurrency = 1024
+prefer-ip = "prefer-ipv4"
+auto-update = false
+tolerate-time-skewness = "5s"
+
+[defense.anti-replay]
+enabled = true
+
+[defense.blocklist]
+enabled = false
+
+[stats.prometheus]
+enabled = false
